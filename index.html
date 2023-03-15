@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <main>
-        <h1>Os numeros são de 0 a 10.</h1>
-        <form action="">
-            <input type="number" class="input">
-            <button type="button" class="btn">Tentar a sorte</button>
-        </form>
-        <p id="bigger">O número que você inseriu é maior do que o número misterioso</p>
-        <p id="smaller">O número que você inseriu é menor do que o número misterioso</p>
-        <h2 id="numberMystery">Acertou</h3>
-            <form action="">
-            <input type="submit" value="Recomeçar">
+        <img id="magic-lamp"src="./assets/images/magic-lamp.svg" alt="">
+        <section id="game">
+            <h1>ADIVINHE O NÚMERO</h1>
+            <form id="form-input" action="">
+                <input type="number" id="input" placeholder="Tente a sorte! (0 - 10)">
+                <button type="button" id="btn">Tentar a sorte</button>
             </form>
+            <p id="paragraph"></p>
+            <a href="" id="reboot">Gerar outra rodada.</a>
+        </section>
+        <audio id="player-music" src="./assets/audios/mundian to Bach ke.mp3" loop> </audio>
+        <div id="sound-controls">
+            <button id="sound-on"><img src="./assets/images/sound-loud-svgrepo-com.svg" alt=""></button>
+            <button id="sound-off"><img src="./assets/images/sound-off-svgrepo-com.svg" alt=""></button>
+        </div>
     </main>
 </body>
 </html>
