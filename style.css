@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    background-color: #252B35;
     background: url(./assets/images/background-habibis.png);
     background-position: center;
     background-size: cover;
@@ -62,7 +63,7 @@ h1 {
     border-radius: 0.2rem;
     padding: 0.3rem;
     height: 3.2rem;
-    font-size: 2.56rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 #btn {
