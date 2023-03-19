@@ -1,10 +1,16 @@
 
 // Adivinhe o número
 
-const number = Math.floor(Math.random() * 11)
+let number = Math.floor(Math.random() * 11)
 const input = document.querySelector('#input')
 const button = document.querySelector('#btn')
+const rebootButton = document.querySelector('#reboot')
 console.log(number)
+
+rebootButton.addEventListener('click', () => {
+    number = Math.floor(Math.random() * 11)
+    console.log(number)
+})
 
 button.addEventListener('click', () => {
     const inputValue = input.value
@@ -21,16 +27,3 @@ button.addEventListener('click', () => {
     }
 })
 
-// Sound
-
-const playerMusic = document.querySelector('#player-music')
-const buttonPlay = document.querySelector('#sound-off')
-const buttonPause = document.querySelector('#sound-on')
-
-buttonPlay.addEventListener('click', () => {
-    playerMusic.pause()
-})
-
-buttonPause.addEventListener('click', () => {
-    playerMusic.play()
-})

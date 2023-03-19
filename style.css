@@ -51,7 +51,7 @@ h1 {
    font-size: 4rem;
 }
 
-#form-input {
+div#inputs {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,11 +83,11 @@ h1 {
 
 #reboot {
     display: flex;
+    width: 23rem;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     margin: 0 auto;
-    width: 20rem;
     color: white;
     background-color: rgb(184, 121, 75);
     border: none;
