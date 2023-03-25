@@ -8,6 +8,8 @@ const rebootButton = document.querySelector('#reboot')
 console.log(number)
 
 rebootButton.addEventListener('click', () => {
+    const paragraph = document.querySelector('#paragraph')
+    paragraph.innerText = ''
     number = Math.floor(Math.random() * 11)
     console.log(number)
 })
