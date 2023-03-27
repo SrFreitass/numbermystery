@@ -1,6 +1,5 @@
-# https://numbermystery.vercel.app/
-
 # Number Mystery EN
+## https://numbermystery.vercel.app/
 This is a small project developed to practice skills in JavaScript. The goal of the game is to guess a random number generated between 0 and 10. As you try to guess, hints will be displayed on the screen to help you reach the correct answer.
 
 ## How to play
