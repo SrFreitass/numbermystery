@@ -2,15 +2,17 @@
 // Adivinhe o número
 
 let number = Math.floor(Math.random() * 11)
-const input = document.querySelector('#input')
+let input = document.querySelector('#input')
 const button = document.querySelector('#btn')
 const rebootButton = document.querySelector('#reboot')
 console.log(number)
 
 rebootButton.addEventListener('click', () => {
     const paragraph = document.querySelector('#paragraph')
+    input.value = ''
     paragraph.innerText = ''
     number = Math.floor(Math.random() * 11)
+    
     console.log(number)
 })
 
